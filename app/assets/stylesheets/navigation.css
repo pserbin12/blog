@@ -1,0 +1,134 @@
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.navbar-ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+
+#login-ul li {
+  text-align: right;
+  list-style-type: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  float: right;
+}
+
+/* Links inside the navbar */
+.navbar li a {
+  float: left;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .login-ul:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-icon {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.social-icons ul a {
+  color: #BFBDBB;
+}
+
+.social-icons ul a:hover {
+  color: #F5FFFF;
+  text-decoration: underline;
+}
+
+.social-icon {
+ width: 20px;
+ display:inline;
+ margin: 40px;
+ background-color: white;
+ text-align: right;
+ float: left;
+}
+
+
+.icons ul {
+  margin-top: 20px;
+}
+
+.icons li {
+   vertical-align: bottom;
+   display: inline;
+   height: 100px;
+}
+
+.icons {
+  padding: 10px 20px;
+}
+
+.social-icons {
+  float: left;
+  display: block;
+}
+
+
+.fa-facebook {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #00aced;
+}
+
+.fa-linkedin {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #0073a4;
+}
+
+.icon-header {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.text-center a:hover {
+  background-color: inherit;
+  font-weight: bold;
+  color: #81424f;
+}

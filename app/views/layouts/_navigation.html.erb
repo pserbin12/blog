@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="./stylesheets/index_stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<div class="navbar">
+  <ul class="navbar-ul">
+    <li><%= link_to 'Home', root_path, class: "nav-link" %></li>
+      <li><%= link_to 'Blog', posts_path, class: "nav-link" %></li>
+        <li><%= link_to 'Expend Currency', root_path, class: "nav-link" %></li>
+          <li><%= link_to 'Jokes And Ideas', root_path, class: "nav-link" %></li>
+            <li><%= link_to 'Serious Projects', root_path, class: "nav-link" %></li>
+<!--  <div class="dropdown">
+  <button class="dropbtn">About Me
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="#">My Bio</a>
+    <a href="./resume.html">My Resume</a>
+  </div> -->
+
+
+
+
+
+<!--<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">The Radical Linguist</a>
+    </div>-->
+    <!--<div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'Blog', root_path %></li>
+            <li><%= link_to 'Expend Currency', root_path %></li>
+              <li><%= link_to 'Jokes And Ideas', root_path %></li>
+                <li><%= link_to 'Serious Projects', root_path %></li> -->
+        <% if admin_signed_in? %>
+        <!--This block is only visible to signed in admins -->
+          <li><%= link_to 'New Post', new_post_path %></li>
+          <li><%= link_to 'My Account', edit_admin_registration_path  %></li>
+          <li><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
+        <!-- The block ends here -->
+        <% else %>
+          <ul id="login-ul"><li><%= link_to 'Login', new_admin_session_path  %></li>
+          </ul>
+        <% end %>
+        </ul>
+</div>
+
+<div class="social-icons">
+  <ul class="icons">
+    <li><a class="social-icon" href="https://twitter.com/theserb_grl"><i class="fa fa-twitter"></i></a></li>
+    <li><a class="social-icon" href="https://www.facebook.com/paige.serbin?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
+    <li><a class="social-icon" href="https://www.linkedin.com/in/paige-serbin-24998813a/"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+</div>

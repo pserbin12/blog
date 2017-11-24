@@ -1,0 +1,57 @@
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+<div class="panel panel-default">
+
+  <div class="background">
+  <div class="layer">
+  </div>
+</div>
+
+  <div class="panel-heading">Older Posts</div>
+  <div class="panel-body">
+  </div>
+
+  <ul class="list-group">
+    <% @posts.reverse.each do |post| %>
+    <li class="list-group-item"><%= link_to post.title, post_path(post.id), class: "list-group-link" %></li>
+  </ul>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+    <% @posts.reverse.each do |post| %>
+    <div class="col-xs-12 text-center">
+      <div class="text-center">
+        <h2><%= post.title %></h2>
+        <h6><%= post.created_at.strftime('%b %d, %Y') %></h6>
+      </div>
+      <div>
+        <%= raw(post.body).truncate(358) %>
+      </div>
+      <div class="text-center">
+        <%= link_to "READ MORE", post_path(post) %>
+      </div>
+      <% if admin_signed_in? %>
+        <%= link_to "Show", post_path(post), class: "btn btn-primary" %>
+        <%= link_to "Edit", edit_post_path(post), class: "btn btn-default" %>
+        <%= link_to "Delete", post_path(post), class: "btn btn-danger", data: {:confirm => "Are you sure?"}, method: :delete %>
+      <% end %>
+      <hr />
+    </div>
+    <% end %>
+  </div>
+</div>
+<!--<div class="older-posts">
+    <table>
+  <thead>
+    <tr>
+      <th colspan="1">Older Posts</th>
+    </tr>
+  </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+      <tr>
+        <td><%= link_to post.title, post_path(post.id) %></td>
+      </tr>
+  <% end %>
+</div> -->
