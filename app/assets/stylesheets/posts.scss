@@ -5,9 +5,10 @@
   max-width: 600px;
   text-align: right;
   float: right;
-  height: 100%;
+  margin-top: 50px;
   font-size: 1.5em;
 }
+
 
 .list-group {
   font-size: 1em;
@@ -15,35 +16,7 @@
 
 .container {
   max-width: 800px;
-  float: left;
+  float: right;
   margin: 14px;
-}
-
-.list-group-link:hover {
-  text-decoration: none;
   background-color: white;
-  color: #81424f;
-  font-weight: bold;
-}
-
-* {
-  font-family: 'Shadows Into Light Two', cursive
-}
-
-.layer {
-  background-color: #d3c2af;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.5;
-	z-index: -1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-html, body {
-  height: 100%;
 }

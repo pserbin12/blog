@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :homes
   resources :projects
   resources :jokes
   resources :currencies
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   resources :posts
   get "/posts/:id", to: "posts#show", as: :show_post
   mount Ckeditor::Engine => '/ckeditor'
-  root to: "posts#index"
+  root to: "homes#index"
 
 
 end
