@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ /*
+make whole background white, with headers and navbar stuff being economica and the posts bodies
+being open sans. The navbar links should have an underline (border) when hovered and the border color should be #db9130. They can be bold and have a shadow.Could learn how to make the border appear from the middle/fade in. Can use a nice background pic and incorporate the other colors with the links in Jokes and other things. Londrina outline can be used for jokes and ideas button titles
+ */
  @import "bootstrap-sprockets";
  @import "bootstrap";
  .panel {
@@ -20,9 +25,14 @@
    width: 300px;
    text-align: right;
    float: right;
-   margin-top: 65px;
+   margin-top: 157px;
    font-size: 1.5em;
+   color: #ffee35;
+   margin-left: 50px;
+ }
 
+ .list-group li a:hover {
+   color: #FF61B3;
  }
 
  .list-group-link {
@@ -35,7 +45,7 @@
  .list-group-link:hover {
    text-decoration: none;
    background-color: white;
-   color: #b497d6;
+   color: #FF61B3;
    font-weight: bold;
  }
 
@@ -44,31 +54,34 @@
   margin-top: 50px;
 }
 
-.text-center-link:hover {
+.text-center li a:hover {
   text-decoration: none;
-  color: #b497d6;
+  color: #FF61B3;
   font-weight: bold;
 }
 
  .container {
-   max-width: 700px;
    float: right;
-   margin: 14px;
-   margin-top: 100px;
+   margin-right: 70px;
+   margin: 0 auto;
+   width: 50%;
+   margin-top: 50px;
    background-color: white;
-   margin-right: 50px;
+   text-align: center;
  }
 
  .list-group-link:hover {
    text-decoration: none;
    background-color: white;
-   color: #b497d6;
+   color: #FF61B3;
    font-weight: bold;
  }
 
 
 .panel-heading {
-   font-family: 'Rock Salt', cursive;
+   font-family: 'Economica', sans-serif;
+   font-size: 30px;
+   font-weight: bold;
  }
 
 
@@ -80,14 +93,17 @@
  }
 
  .title {
+   font-size: 45px;
    text-align: center;
-   font-family: 'Rock Salt', cursive, sans-serif;
-   float: left;
-   margin: 3%;
-   padding-left: 20%;
+   font-family: 'Economica', sans-serif;
+   font-weight: bold;
+   width: 50%;
+   margin-left: 50px;
+   margin: 0 auto;
+
  }
 
- .layer {
+/* .layer {
   position: fixed;
   top: -50%;
   left: -50%;
@@ -108,3 +124,156 @@
   opacity: 0.6;
   z-index: -1;
  }
+*/
+ .post {
+   background-image: url(https://i.pinimg.com/736x/4e/82/be/4e82be2d5e6d77fada6bedebb162a1d3--paper-texture-background-texture-paper.jpg);
+   max-width: 600px;
+   min-height: 600px;
+   width: 50%;
+   margin: 0 auto;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.7;
+ }
+
+
+
+ body {
+   background-color: white;
+ }
+/* taken from navigation.css */
+.navbar {
+  overflow: hidden;
+  display: inline;
+}
+
+.navbar-ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+#login-ul li {
+  text-align: right;
+  list-style-type: none;
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
+  float: left;
+}
+
+/* Links inside the navbar */
+.navbar li a {
+  float: right;
+  font-size: 23px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .login-ul:hover {
+  background-color: inherit;
+  color: #FF61B3;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.nav-link {
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-icon {
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+}
+
+.social-icons ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.social-icons ul a {
+  color: #BFBDBB;
+}
+
+.social-icons ul a:hover {
+  color: #FF61B3;
+  text-decoration: underline;
+}
+
+.social-icon {
+ width: 20px;
+ display:inline;
+ margin: 40px;
+ background-color: white;
+ text-align: right;
+ float: left;
+}
+
+
+.icons ul {
+  margin-top: 20px;
+}
+
+.icons li {
+   vertical-align: bottom;
+   display: inline;
+   height: 100px;
+}
+
+.icons {
+  padding: 10px 20px;
+}
+
+.social-icons {
+  float: left;
+  display: block;
+}
+
+
+.fa-facebook {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #00aced;
+}
+
+.fa-linkedin {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #0073a4;
+}
+
+.icon-header {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.text-center a:hover {
+  background-color: inherit;
+  font-weight: bold;
+  color: #81424f;
+}

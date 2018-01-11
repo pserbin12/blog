@@ -1,31 +1,26 @@
 .navbar {
   overflow: hidden;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
   display: inline;
 }
 
 .navbar-ul {
   list-style-type: none;
   text-decoration: none;
-  color: white;
 }
 
 
 #login-ul li {
   text-align: right;
   list-style-type: none;
-  font-family: 'Rock Salt', cursive;
-  text-transform: uppercase;
-  letter-spacing: 6px;
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
   float: left;
 }
 
 /* Links inside the navbar */
 .navbar li a {
   float: right;
-  font-size: 12px;
+  font-size: 23px;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -34,12 +29,14 @@
 
 .navbar a:hover, .login-ul:hover {
   background-color: inherit;
-  color: black;
-  font-weight: bold;
+  color: #FF61B3;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .nav-link {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Economica', sans-serif;
+  font-weight: bold;
 }
 
 
@@ -63,7 +60,7 @@
 }
 
 .social-icons ul a:hover {
-  color: #F5FFFF;
+  color: #FF61B3;
   text-decoration: underline;
 }
 
